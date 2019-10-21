@@ -1,4 +1,40 @@
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+Learnings Covered:
+
+Getting feedback from a User 
+Fetching data from an API or server
+Showing a list of records 
+
+A two version implementation project:
+
+Version 1 - A user can type in a product (cars, bikes, plants etc) and the app will use an API to fetch photo’s of the specific search into a list of photo’s onto the app. 
+
+Version 2 - The same application, but rather than returned as a list they will be tiled across the screen. Version 2 will be more on the styling and css side. 
+
+Challenges:
+
+Needing to get a search term for the user
+Making that search requests to make a request to an outside API and fetch data 
+Take the fetched images and show them on the screen as a list 
+
+
+
+Project Breakdown:
+
+Create a single search bar component which handles the user input event 
+Have a separate ImageList which will render the results on the screen 
+
+								    App
+						  |			   		  |
+					SearchBar		   ImageList
+
+
 
 ## Available Scripts
 
