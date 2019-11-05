@@ -33,6 +33,35 @@ Have a separate ImageList which will render the results on the screen
 								    App
 						  |			   		  |
 					SearchBar		   ImageList
+					
+					
+Callback Event Handlers:
+
+onClick - User clicks on something 
+onChange - User changes text to an input 
+onSubmit - User submits a form 
+
+Flow of Controlled Element: 
+
+User types input 
+Callback gets invoked 
+We call setState with the new value 
+Component re-renders
+Input is told what the value is (from state)
+
+Ajax Requests 
+
+React App -> Ajax Client —“send me pics of cars”—> Unsplash API —“here’s your car pictures”—> Ajax Client —> React App. 
+
+Time Series Flow:
+
+Component renders one time with no images 
+onSearchSubmit method called
+Request made to Unsplash
+	*wait*
+Request Complete 
+Set image data on state of App component 
+App component re-renders and shows images  
 
 
 
